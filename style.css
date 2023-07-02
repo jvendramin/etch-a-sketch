@@ -1,0 +1,61 @@
+:root {
+    --grid-cols: auto;
+    --grid-rows: auto;
+  }
+  
+#grid {
+    height: 90%;
+    margin: 12px;
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), auto);
+    grid-template-columns: repeat(var(--grid-cols), auto);
+  }
+  
+.grid-item {
+    padding: 1em;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+.grid-item:hover {
+    padding: 1em;
+    border: 1px solid #000000;
+    background-color: #606060;
+    text-align: center;
+}
+
+.create {
+
+    background-color: #232227;
+    border: 2px solid #565263;
+    color: white;
+    padding: 10px 24px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: customFont;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.124), 0 6px 20px 0 rgba(0, 0, 0, 0.162);
+    text-align: center;
+    transition: all .1s ease-in-out;
+}
+
+.create:hover {
+
+    background-color: #565263;
+    border: 2px solid #232227;
+    transform: scale(1.05);
+
+}
+
+table {
+    text-align: right;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+}
+
+.text {
+    width: 40%;
+    margin-right: 12px;
+}
